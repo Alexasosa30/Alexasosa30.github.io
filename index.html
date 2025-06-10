@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conciencia Verde</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo-titulo">
+      <img src="logo.png" alt="Logo Conciencia Verde" class="logo">
+      <h1>Conciencia Verde <span class="subtitulo">Colegio de Bachilleres 20 “Matías Romero”</span></h1>
+    </div>
+    <nav>
+      <a href="#inicio">🏠 Inicio</a>
+      <a href="#imagenes">🌿 Imágenes</a>
+      <a href="#acciones">💡 Acciones</a>
+      <a href="#himno">🎶 Himno</a>
+      <a href="#contacto">📬 Contacto</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <section class="hero" id="inicio">
+      <h2>Por un Planeta Vivo</h2>
+      <p>Cuidar el medio ambiente no es una opción, es una necesidad urgente. Si lo descuidamos, enfrentaremos consecuencias como la escasez de agua, la pérdida de biodiversidad, enfermedades respiratorias y un clima extremo. Tú puedes marcar la diferencia: recicla, planta, informa y actúa desde hoy. </p>
+    </section>
+
+    <section class="images-section" id="imagenes">
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Bosque">
+        <div class="info">
+          <h3>🌲 Los bosques respiran con nosotros</h3>
+          <p>Proveen oxígeno, refugio y regulan el clima. La deforestación provoca sequías y pérdida de especies.</p>
+        </div>
+      </div>
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80" alt="Planta en mano">
+        <div class="info">
+          <h3>🌱 Pequeñas acciones, gran impacto</h3>
+          <p>Plantar mejora la calidad del aire y conecta con la naturaleza.</p>
+        </div>
+      </div>
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1556767576-cfba4e9e2cf4?auto=format&fit=crop&w=600&q=80" alt="Campo">
+        <div class="info">
+          <h3>🌾 La tierra que nos alimenta</h3>
+          <p>Cuidar los suelos es asegurar alimentos para el futuro.</p>
+        </div>
+      </div>
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1542903660-eedba2cda473?auto=format&fit=crop&w=600&q=80" alt="Energía solar">
+        <div class="info">
+          <h3>☀️ Energía limpia</h3>
+          <p>La energía solar y eólica reduce la huella de carbono y es el futuro sustentable.</p>
+        </div>
+      </div>
+      <div class="image-card">
+        <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?auto=format&fit=crop&w=600&q=80" alt="Reciclaje">
+        <div class="info">
+          <h3>♻️ Reciclar es responsabilidad</h3>
+          <p>Reduce basura, ahorra recursos y protege nuestro entorno.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="buttons-section" id="acciones">
+      <button onclick="mostrarInfo('reducir')">📉 Reducir</button>
+      <button onclick="mostrarInfo('reutilizar')">🔁 Reutilizar</button>
+      <button onclick="mostrarInfo('reciclar')">♻️ Reciclar</button>
+      <button onclick="mostrarInfo('plantar')">🌳 Plantar</button>
+      <button onclick="mostrarInfo('educar')">📚 Educar</button>
+    </section>
+
+    <div id="reducir" class="info-section"><h3>Reducir</h3><p>Evita el consumo innecesario. Compra lo justo y elige productos reutilizables.</p></div>
+    <div id="reutilizar" class="info-section"><h3>Reutilizar</h3><p>Dale más de una vida a los objetos. Usa bolsas de tela, frascos y más.</p></div>
+    <div id="reciclar" class="info-section"><h3>Reciclar</h3><p>Clasifica residuos y apóyate en los centros de reciclaje de tu comunidad.</p></div>
+    <div id="plantar" class="info-section"><h3>Plantar</h3><p>Arbolar la ciudad ayuda a combatir el cambio climático y mejora la salud.</p></div>
+    <div id="educar" class="info-section"><h3>Educar</h3><p>Compartir conocimientos ambientales impulsa un cambio social real.</p></div>
+
+    <section id="himno">
+      <h2>🎶 Himno del Colegio de Bachilleres</h2>
+      <audio controls>
+        <source src="himno.mp3" type="audio/mpeg">
+        Tu navegador no soporta el audio.
+      </audio>
+    </section>
+
+    <section id="contacto">
+      <h2>📬 Contáctanos</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br>
+        <label for="mensaje">Comentario:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Conciencia Verde – Unidos por el futuro del planeta 🌎</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
